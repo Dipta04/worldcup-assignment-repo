@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{font-family: 'Poppins', sans-serif;}
+/* first-section */
+.first-section{display: flex;justify-content: center;}
+.first-parent:hover{background-color: orange;}
+.first-parent{display: grid;
+grid-template-columns: repeat(2,1fr);background-color: black;
+ width: 70%;border-radius: 20px;height: 450px;}
+
+.first-sec-child h1{font-size: 50px;}
+.first-sec-child{color: aliceblue;padding-left: 15px;}
+.first-sec-img{padding-left: 100px;padding-top: 25px;}
+.first-section button{background-color: tomato;color: aliceblue;font-weight: 200;margin-bottom: 20px;margin-left: 20px;padding-right: 20px;padding-left:20px ;border-radius: 10px;}
+/* button */
+.button-sec{display: flex;justify-content: center ;}
+.button-parent{background-color: black;width: 300px;margin-top: 50px;padding-bottom: 20px;border-radius: 20px;}
+.button-one, .button-two, .button-three{display: flex;justify-content: center;padding-top: 25px;}
+.button-one button{padding-top: 10px;padding-bottom: 10px;border-radius: 10px;}
+.button-one a{text-decoration: none;color: black;}
+.button-two button{padding-left: 30px;padding-right: 30px;padding-top: 10px;padding-bottom: 10px;border-radius: 10px;}
+.button-three a{text-decoration: none;color: black;padding-left: 30px;padding-right: 30px;}
+.button-three button{padding-top: 10px;padding-bottom: 10px;border-radius: 10px;}
+.button-one button{background-color: tomato;padding-top: 10px;padding-bottom: 10px;border-radius: 10px;}
+/* second-section */
+.img{display: flex;}
+.top-parent{display:grid;grid-template-columns: repeat(3,1fr);
+margin-top: 100px;width: 50%;margin-left: 400px;}
+/* footer */
+footer h1{display: flex;justify-content: center;color: white; padding-top: 150px;}
+.footer-info{display: grid;grid-template-columns: repeat(6,1fr);display: flex;justify-content: center;grid-column-gap: 30px;color: white;}
+
+footer{background-color: black;height: 400px;}
+.social-media{display: flex;justify-content: center;grid-column-gap: 20px;}
+.social-media button{background-color:black}
+.fa-facebook{color: blue;}
+.fa-linkedin{color: blue;}
+.fa-whatsapp{color: green;}
+/* tabletbutton */
+.tablet-button{margin-left: 700px;margin-top: 50px;color: aliceblue;background-color: tomato;padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;border-radius: 5px;visibility: hidden;}
+/* media-style */
+/* mobile-only */
+@media only screen and (max-width:688px)
+{
+    .first-parent{width: 100%;display: flex; flex-direction: column;height:100% ;}
+    .button-parent{background-color: white;}
+    .top-parent{width: 100%;display:grid;grid-template-columns: repeat(1,1fr);flex-direction: column; margin-left: 0px;}
+    .footer-info {flex-direction: column;display: flex;align-items: center;}
+    footer{height: 800px;}
+}
+/* tablet-only */
+@media only screen and (max-width:992px) and (min-width:688px)
+{
+.first-parent{width: 100%;display: flex;flex-direction: column;height: 100%;}
+.button-parent{background-color: white;display: flex;margin-right: 150px;}
+.button-one, .button-two, .button-three{margin-right: 100px;}
+.top-parent{width: 100%;display:grid;grid-template-columns: repeat(2,1fr);flex-direction: column; margin-left: 0px;}
+.tablet-button{visibility: visible;margin-left: 350px;}
+}
